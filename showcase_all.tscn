@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=3 uid="uid://d1bfq2x5lyi3s"]
+
+[ext_resource type="Script" path="res://color_pattern.gd" id="1_1hrym"]
+[ext_resource type="Script" path="res://pivot.gd" id="2_8h1b4"]
+[ext_resource type="Script" path="res://slinky.gd" id="3_kabu1"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_topa6"]
+script = ExtResource("1_1hrym")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_c2yqj"]
+script = ExtResource("2_8h1b4")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_6raak"]
+script = ExtResource("3_kabu1")
+
+[node name="showcase_all" type="RichTextLabel"]
+offset_right = 1130.0
+offset_bottom = 622.0
+theme_override_font_sizes/normal_font_size = 80
+bbcode_enabled = true
+text = "[color_pattern colors=green,red]christmas lights guy[/color_pattern]
+
+[color_pattern colors=white,black,black,black][slinky]slinky girl[/slinky][/color_pattern]
+[pivot vertical_size=20]worm man[/pivot]
+                        [slinky][pivot index=6]and friends[/pivot][/slinky]
+[color_pattern colors=white,black,black,black][slinky]slinky girl[/slinky][/color_pattern]"
+custom_effects = [SubResource("RichTextEffect_topa6"), SubResource("RichTextEffect_c2yqj"), SubResource("RichTextEffect_6raak")]

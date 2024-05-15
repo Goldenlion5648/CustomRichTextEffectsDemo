@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgsxo2l7215de"]
+
+[ext_resource type="Script" path="res://pivot.gd" id="1_js1hf"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_rq1fo"]
+script = ExtResource("1_js1hf")
+
+[node name="pivot" type="RichTextLabel"]
+offset_right = 516.0
+offset_bottom = 359.0
+theme_override_font_sizes/normal_font_size = 80
+bbcode_enabled = true
+text = "[pivot]this is pivot[/pivot]"
+custom_effects = [SubResource("RichTextEffect_rq1fo")]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1wsojt5uaqdb"]
+
+[ext_resource type="Script" path="res://color_pattern.gd" id="1_atheh"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_tgeow"]
+script = ExtResource("1_atheh")
+
+[node name="color_pattern" type="RichTextLabel"]
+offset_right = 763.0
+offset_bottom = 422.0
+theme_override_font_sizes/normal_font_size = 80
+bbcode_enabled = true
+text = "[color_pattern colors=red,green]testing[/color_pattern]"
+custom_effects = [SubResource("RichTextEffect_tgeow")]

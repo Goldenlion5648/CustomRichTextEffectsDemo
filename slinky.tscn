@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqvcubwswufad"]
+
+[ext_resource type="Script" path="res://slinky.gd" id="1_7wbyc"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_e5qgf"]
+script = ExtResource("1_7wbyc")
+
+[node name="slinky" type="RichTextLabel"]
+offset_right = 619.0
+offset_bottom = 393.0
+theme_override_font_sizes/normal_font_size = 80
+bbcode_enabled = true
+text = "[slinky speed=2]this is slinky[/slinky]"
+custom_effects = [SubResource("RichTextEffect_e5qgf")]
